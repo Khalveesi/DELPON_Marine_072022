@@ -1,0 +1,19 @@
+{
+  "name": "delpon_marine_3_072022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss:./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khalveesi/DELPON_Marine_072022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Khalveesi/DELPON_Marine_072022/issues"
+  },
+  "homepage": "https://github.com/Khalveesi/DELPON_Marine_072022#readme"
+}
