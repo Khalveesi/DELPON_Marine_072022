@@ -1,0 +1,85 @@
+.title h1 {
+  font-family: "shrikhand";
+  font-weight: 500;
+}
+
+.restaurant-menu img {
+  width: 100%;
+  height: 242px;
+  object-fit: cover;
+}
+.restaurant-menu .container {
+  padding: 34px 20px;
+  background-color: #f6f6f6;
+  border-radius: 40px;
+  margin-top: -50px;
+  position: relative;
+  z-index: 1;
+}
+.restaurant-menu .clr-txt-small {
+  color: #353535;
+  font-weight: 400;
+}
+.restaurant-menu .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurant-menu .card {
+  display: flex;
+}
+.restaurant-menu .card:hover > .card__checkbox {
+  width: 58px;
+}
+.restaurant-menu .card:hover > .card__checkbox i {
+  opacity: 1;
+  transform: rotate(1turn);
+}
+.restaurant-menu .card__container {
+  margin-top: 38px;
+}
+.restaurant-menu .card__separator {
+  height: 3px;
+  background-color: #99E2D0;
+  width: 40px;
+  margin: 4px 0 10px 0;
+}
+.restaurant-menu .card__content {
+  display: flex;
+  flex: 1;
+}
+.restaurant-menu .card__dish {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.restaurant-menu .card__content-price {
+  margin-top: auto;
+}
+.restaurant-menu .card__content-price .card__price {
+  color: #353535;
+  font-weight: 700;
+}
+.restaurant-menu .card__checkbox {
+  display: flex;
+  width: 0px;
+  background-color: #99E2D0;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: width 300ms;
+}
+.restaurant-menu .card__checkbox i {
+  opacity: 0;
+  transition: transform 300ms;
+}
+.restaurant-menu .order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 46px 0;
+}
+
+/*# sourceMappingURL=restaurant.css.map */
