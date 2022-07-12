@@ -1,3 +1,29 @@
+@keyframes fade-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in-anim {
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-name: fade-anim;
+}
+
+.delay-1 {
+  animation-delay: 600ms;
+}
+
+.delay-2 {
+  animation-delay: 800ms;
+}
+
+.delay-3 {
+  animation-delay: 1000ms;
+}
+
 .title h1 {
   font-family: "shrikhand";
   font-weight: 500;
@@ -37,6 +63,7 @@
 }
 .restaurant-menu .card__container {
   margin-top: 38px;
+  opacity: 0;
 }
 .restaurant-menu .card__separator {
   height: 3px;
@@ -47,6 +74,10 @@
 .restaurant-menu .card__content {
   display: flex;
   flex: 1;
+  overflow: hidden;
+}
+.restaurant-menu .card__content-dish {
+  overflow: hidden;
 }
 .restaurant-menu .card__dish {
   font-weight: 700;
@@ -59,6 +90,11 @@
 .restaurant-menu .card__content-price .card__price {
   color: #353535;
   font-weight: 700;
+}
+.restaurant-menu .card__dish, .restaurant-menu .card__dish-desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .restaurant-menu .card__checkbox {
   display: flex;
@@ -80,6 +116,7 @@
   align-items: center;
   justify-content: center;
   margin: 46px 0;
+  opacity: 0;
 }
 
 /*# sourceMappingURL=restaurant.css.map */
