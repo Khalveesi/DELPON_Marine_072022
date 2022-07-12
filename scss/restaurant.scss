@@ -1,0 +1,149 @@
+$clr-txt-secondary: #353535;
+$clr-primary: #9356DC;
+$clr-secondary: #FF79DA;
+$clr-tertiary: #99E2D0;
+
+@keyframes fade-anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in-anim {
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-name: fade-anim;
+}
+
+.delay-1 {
+    animation-delay: 600ms;
+}
+
+.delay-2 {
+    animation-delay: 800ms;
+}
+
+.delay-3 {
+    animation-delay: 1000ms;
+}
+
+.title {
+    h1 {
+        font-family: 'shrikhand';
+        font-weight: 500;
+    }
+}
+
+.restaurant-menu {
+    img {
+        width: 100%;
+        height: 242px;
+        object-fit: cover;
+    }
+
+    .container {
+        padding: 34px 20px;
+        background-color: #f6f6f6;
+        border-radius: 40px;
+        margin-top: -50px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .clr-txt-small {
+        color: $clr-txt-secondary;
+        font-weight: 400;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        display: flex;
+
+        &:hover>.card__checkbox {
+            width: 58px;
+
+            i {
+                opacity: 1;
+                transform: rotate(1turn);
+            }
+        }
+
+        &__container {
+            margin-top: 38px;
+            opacity: 0;
+        }
+
+        &__separator {
+            height: 3px;
+            background-color: $clr-tertiary;
+            width: 40px;
+            margin: 4px 0 10px 0;
+        }
+
+        &__content {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+
+            &-dish {
+                overflow: hidden;
+            }
+        }
+
+        &__dish {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        &__content-price {
+            margin-top: auto;
+
+            .card__price {
+                color: $clr-txt-secondary;
+                font-weight: 700;
+            }
+        }
+
+        &__dish,
+        &__dish-desc {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &__checkbox {
+            display: flex;
+            width: 0px;
+            background-color: $clr-tertiary;
+            border-radius: 0 10px 10px 0;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            transition: width 300ms;
+
+            i {
+                opacity: 0;
+                transition: transform 300ms;
+            }
+        }
+    }
+
+    .order {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 46px 0;
+        opacity: 0;
+    }
+}
