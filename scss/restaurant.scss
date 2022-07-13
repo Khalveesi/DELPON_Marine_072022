@@ -39,7 +39,7 @@ $clr-tertiary: #99E2D0;
 }
 
 .restaurant-menu {
-    img {
+    >img {
         width: 100%;
         height: 242px;
         object-fit: cover;
@@ -145,5 +145,11 @@ $clr-tertiary: #99E2D0;
         justify-content: center;
         margin: 46px 0;
         opacity: 0;
+    }
+
+    .heart-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 32px;
     }
 }

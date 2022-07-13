@@ -16,6 +16,14 @@ a:visited {
   color: inherit;
 }
 
+@keyframes heart-fill {
+  from {
+    clip-path: circle(0%);
+  }
+  to {
+    clip-path: circle(100%);
+  }
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -129,6 +137,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   padding: 0 20px;
+  cursor: pointer;
 }
 button:hover {
   background: linear-gradient(175deg, #ff93e1 0%, #a16be0 100%);
@@ -232,7 +241,11 @@ button:hover {
   margin-bottom: 3px;
 }
 .card__like-btn {
-  font-size: 20px;
+  position: relative;
+  z-index: 10;
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
 }
 
 footer {
@@ -256,6 +269,25 @@ footer .nav a {
 footer .nav i {
   font-size: 14px;
   width: 20px;
+}
+
+.heart-btn {
+  position: relative;
+  cursor: pointer;
+}
+.heart-btn:hover > .fa-solid.fa-heart {
+  opacity: 1;
+  animation: heart-fill 500ms;
+}
+.heart-btn > i {
+  position: absolute;
+}
+.heart-btn .fa-regular.fa-heart {
+  opacity: 0.8;
+}
+.heart-btn .fa-solid.fa-heart {
+  opacity: 0;
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=main.css.map */
