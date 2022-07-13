@@ -29,7 +29,7 @@
   font-weight: 500;
 }
 
-.restaurant-menu img {
+.restaurant-menu > img {
   width: 100%;
   height: 242px;
   object-fit: cover;
@@ -117,6 +117,11 @@
   justify-content: center;
   margin: 46px 0;
   opacity: 0;
+}
+.restaurant-menu .heart-btn {
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
 }
 
 /*# sourceMappingURL=restaurant.css.map */
