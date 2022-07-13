@@ -22,6 +22,71 @@ a {
     }
 }
 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    5% {
+        transform: rotate(45deg);
+    }
+
+    15% {
+        transform: rotate(-45deg);
+    }
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(360deg);
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.loading-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f6f6f6;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: fade-out;
+    animation-delay: 3000ms;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+}
+
+.loading-spinner {
+    font-size: 60px;
+    color: $clr-primary;
+    animation: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 header {
     position: relative;
     z-index: 1;
