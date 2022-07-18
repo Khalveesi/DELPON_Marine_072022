@@ -1,0 +1,56 @@
+@keyframes heart-fill {
+    from {
+        clip-path: circle(0%);
+    }
+
+    to {
+        clip-path: circle(100%);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    5% {
+        transform: rotate(45deg);
+    }
+
+    15% {
+        transform: rotate(-45deg);
+    }
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(360deg);
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
