@@ -34,7 +34,6 @@ a {
     justify-content: center;
     flex-direction: column;
     animation: fade-out;
-    animation-delay: 3000ms;
     animation-duration: 400ms;
     animation-fill-mode: forwards;
     pointer-events: none;
@@ -125,7 +124,7 @@ button {
 }
 
 .steps-container {
-    margin: 30px 0 0px 0;
+    margin: 30px 0 0 0;
 
     @include desktop {
         display: flex;
@@ -306,6 +305,7 @@ footer {
     &:hover>.fa-solid.fa-heart {
         opacity: 1;
         animation: heart-fill 500ms;
+        color: $clr-primary;
     }
 
     >i {
@@ -318,6 +318,5 @@ footer {
 
     .fa-solid.fa-heart {
         opacity: 0;
-        color: $clr-primary;
     }
 }
