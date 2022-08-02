@@ -34,6 +34,7 @@ a {
     justify-content: center;
     flex-direction: column;
     animation: fade-out;
+    animation-delay: 3000ms;
     animation-duration: 400ms;
     animation-fill-mode: forwards;
     pointer-events: none;
