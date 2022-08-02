@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Khalveesi/DELPON_Marine_072022/issues"
   },
-  "homepage": "https://github.com/Khalveesi/DELPON_Marine_072022#readme"
+  "homepage": "https://github.com/Khalveesi/DELPON_Marine_072022#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
 }

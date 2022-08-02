@@ -107,13 +107,6 @@
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.09);
   }
 }
-.restaurant-menu .card:hover > .card__checkbox {
-  width: 58px;
-}
-.restaurant-menu .card:hover > .card__checkbox i {
-  opacity: 1;
-  transform: rotate(1turn);
-}
 .restaurant-menu .card__container {
   margin-top: 38px;
   opacity: 0;
@@ -163,6 +156,13 @@
 .restaurant-menu .card__checkbox i {
   opacity: 0;
   transition: transform 300ms;
+}
+.restaurant-menu .card:hover > .card__checkbox {
+  width: 58px;
+}
+.restaurant-menu .card:hover > .card__checkbox i {
+  opacity: 1;
+  transform: rotate(1turn);
 }
 .restaurant-menu .order {
   display: flex;
